@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <nav>
+            <a href="#" id="show-purchase">Purchase</a>
+            <a href="#" id="show-records">Records</a>
+            <a href="#" id="show-today">Today's Purchases</a>
+        </nav>
+
+        <div id="purchase" class="page">
+            <h2>Purchase</h2>
+            <input type="text" id="purchase-code" placeholder="Enter 4-digit code">
+            <button id="purchase-button">Purchase</button>
+        </div>
+
+        <div id="records" class="page" style="display:none;">
+            <h2>Records</h2>
+            <button id="show-all-records">Show All Records</button>
+            <ul id="records-list"></ul>
+        </div>
+
+        <div id="today" class="page" style="display:none;">
+            <h2>Today's Purchases</h2>
+            <ul id="today-list"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
